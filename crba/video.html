@@ -12,9 +12,12 @@
                 var id = (Number(new URLSearchParams(window.location.search).get("id")) || 0);
 
                 if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-                    document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
+                    document.getElementById("video-source").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
                 } else {
+                    document.getElementById("video-source").remove();
                     document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v" + id + ".mp4";
+
+                    document.getElementById("video").style.cssText = "transform: translateZ(1px);";
                 };
 
                 if (id < 3) {
@@ -70,12 +73,9 @@
 
             #video {
                 display: block;
-                width: calc(100% - 4vmax);
-                height: calc(100% - 4vmax);
                 max-width: 100%;
-                max-height: 60vh;
+                max-height: 50vh;
                 margin: 2vmax;
-                transform: translateZ(1px);
             }
 
             #header-background {
@@ -208,7 +208,9 @@
 
         <div class="bordered-box" style="width: fit-content; margin-top: 3.5vh; margin-left: auto; margin-right: auto;">
             <div class="bordered-box-inner">
-                <video id="video" type="video/mp4" controls></video>
+                <video id="video" controls playsInline>
+                    <source id="video-source" type="video/mp4">
+                </video>
             </div>
         </div>
 
