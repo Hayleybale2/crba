@@ -10,7 +10,12 @@
 
             window.addEventListener("load", function () {
                 var id = (Number(new URLSearchParams(window.location.search).get("id")) || 0);
-                document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v" + id + ".mp4";
+
+                if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+                    document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
+                } else {
+                    document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v" + id + ".mp4";
+                };
 
                 if (id < 3) {
                     document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + (id + 1);
@@ -201,7 +206,7 @@
 
         <div class="bordered-box" style="width: fit-content; margin-top: 3.5vh; margin-left: auto; margin-right: auto;">
             <div class="bordered-box-inner">
-                <video id="video" controls></video>
+                <video id="video" type="video/mp4" controls></video>
             </div>
         </div>
 
