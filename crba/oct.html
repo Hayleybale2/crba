@@ -9,8 +9,8 @@
             };
 
             window.addEventListener("load", function () {
-                document.getElementById("image").src = (new URLSearchParams(window.location.search).get("id") || "0") + ".png";
-                document.getElementById("next").href = "https://github.com/Hayleybale2/crba/releases/download/main/s" + window.location.href.split("?")[0] + "?id=" + randint(0, 13);
+                document.getElementById("image").src = "https://github.com/Hayleybale2/crba/releases/download/main/o" + (new URLSearchParams(window.location.search).get("id") || "0") + ".png";
+                document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + randint(0, 13);
             });
         </script>
 
