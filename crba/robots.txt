@@ -1,0 +1,4 @@
+Sitemap: https://crba.dedyn.io/sitemap.xml
+
+User-agent: *
+Allow: /
