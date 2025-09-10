@@ -6,25 +6,23 @@
         <meta name="description" content="Canterlot Royal Ballet Academy by AVCHonline">
         <title>Canterlot Royal Ballet Academy</title>
 
+        <script type="application/ld+json">
+            {
+                "@context" : "https://schema.org",
+                "@type" : "WebSite",
+                "name" : "Canterlot Royal Ballet Academy",
+                "url" : "https://crba.dedyn.io/"
+            }
+        </script>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WB31JHJQL"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-5WB31JHJQL');
-        </script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        <script>
-            function randint(min, max) {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            };
-
-            window.addEventListener("load", function () {
-                document.getElementById("image").src = "https://github.com/Hayleybale2/crba/releases/download/main/" + (new URLSearchParams(window.location.search).get("id") || "0") + ".png";
-                document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + randint(0, 186);
-            });
+            gtag('config', 'G-5WB31JHJQL');
         </script>
 
         <style>
