@@ -35,13 +35,15 @@
                 if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
                     document.getElementById("video-source").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
                     if (["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
-                        document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); margin-top: 4vmax; margin-bottom: 4vmax;";
+                        document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 6vmax); margin-top: 3vmax; margin-bottom: 3vmax;";
                     };
                 } else {
                     document.getElementById("video-source").remove();
                     document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v" + id + ".mp4";
 
-                    document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); margin-top: 4vmax; margin-bottom: 4vmax;";
+                    if (!(navigator.userAgent.includes("Chrome"))) {
+                        document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 6vmax); margin-top: 3vmax; margin-bottom: 3vmax;";
+                    };
                 };
 
                 if (id < 3) {
@@ -97,11 +99,12 @@
 
             #video {
                 display: block;
-                max-width: calc(100% - 4vmax);
+                max-width: calc(100% - 4.66vmax);
                 max-height: 50vh;
                 margin: auto;
-                margin-top: 2vmax;
-                margin-bottom: 2vmax;
+                margin-top: 2.33vmax;
+                margin-bottom: 2.33vmax;
+                transform: translateZ(-1px);
             }
 
             #header-background {
