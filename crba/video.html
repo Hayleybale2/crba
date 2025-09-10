@@ -35,13 +35,13 @@
                 if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
                     document.getElementById("video-source").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
                     if (["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
-                        document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); max-height: calc(100% - 8vmax);";
+                        document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); margin-top: 4vmax; margin-bottom: 4vmax;";
                     };
                 } else {
                     document.getElementById("video-source").remove();
                     document.getElementById("video").src = "https://github.com/Hayleybale2/crba/releases/download/main/v" + id + ".mp4";
 
-                    document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); max-height: calc(100% - 8vmax);";
+                    document.getElementById("video").style.cssText = "transform: translateZ(1px); max-width: calc(100% - 8vmax); margin-top: 4vmax; margin-bottom: 4vmax;"";
                 };
 
                 if (id < 3) {
@@ -98,8 +98,10 @@
             #video {
                 display: block;
                 max-width: calc(100% - 4vmax);
-                max-height: calc(100% - 4vmax);
+                max-height: 50vh;
                 margin: auto;
+                margin-top: 2vmax;
+                margin-bottom: 2vmax;
             }
 
             #header-background {
