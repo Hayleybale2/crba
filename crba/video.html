@@ -25,7 +25,7 @@
 
                 if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
                     document.getElementById("video-source").src = "https://github.com/Hayleybale2/crba/releases/download/main/v-s" + id + ".mp4";
-                    if (["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document) {
+                    if (["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
                         document.getElementById("video").style.cssText = "transform: translateZ(1px);";
                     };
                 } else {
