@@ -31,8 +31,132 @@
             };
 
             window.addEventListener("load", function () {
-                document.getElementById("image").src = "https://github.com/Hayleybale2/crba/releases/download/main/" + (new URLSearchParams(window.location.search).get("id") || "0") + ".png";
+                var id = new URLSearchParams(window.location.search).get("id") || "0";
+
+                document.getElementById("image").src = "https://github.com/Hayleybale2/crba/releases/download/main/" + id + ".png";
                 document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + randint(0, 186);
+
+                if (id == "12") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=11\">available in 正體中文</a>";
+                } else if (id == "11") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=12\">English</a>版本";
+                } else if (id == "109") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=110\">available in 正體中文</a>";
+                } else if (id == "110") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=109\">English</a>版本";
+                } else if (id == "114") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=115\">available in 正體中文</a>";
+                } else if (id == "115") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=114\">English</a>版本";
+                } else if (id == "119") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=120\">available in 正體中文</a>";
+                } else if (id == "120") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=119\">English</a>版本";
+                } else if (id == "36") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=35\">available in 正體中文</a>";
+                } else if (id == "35") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=36\">English</a>版本";
+                } else if (id == "32") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=33\">available in 正體中文</a>";
+                } else if (id == "33") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=32\">English</a>版本";
+                } else if (id == "135") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=136\">available in 正體中文</a>";
+                } else if (id == "136") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=135\">English</a>版本";
+                } else if (id == "46") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=45\">available in 正體中文</a>";
+                } else if (id == "45") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=46\">English</a>版本";
+                } else if (id == "47") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=48\">available in 正體中文</a>";
+                } else if (id == "48") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=47\">English</a>版本";
+                } else if (id == "159") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=158\">available in 正體中文</a>";
+                } else if (id == "158") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=159\">English</a>版本";
+                } else if (id == "54") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=53\">available in 正體中文</a>";
+                } else if (id == "53") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=54\">English</a>版本";
+                } else if (id == "84") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=55\">available in 正體中文</a>";
+                } else if (id == "55") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=84\">English</a>版本";
+                } else if (id == "181") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=180\">available in 正體中文</a>";
+                } else if (id == "180") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=181\">English</a>版本";
+                } else if (id == "176") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=175\">available in 正體中文</a>";
+                } else if (id == "175") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=176\">English</a>版本";
+                } else if (id == "75") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=74\">available in 正體中文</a>";
+                } else if (id == "74") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=75\">English</a>版本";
+                } else if (id == "77") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=76\">available in 正體中文</a>";
+                } else if (id == "76") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=77\">English</a>版本";
+                } else if (id == "79") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=78\">available in 正體中文</a>";
+                } else if (id == "78") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=79\">English</a>版本";
+                } else if (id == "81") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=80\">available in 正體中文</a>";
+                } else if (id == "80") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=81\">English</a>版本";
+                } else if (id == "83") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=82\">available in 正體中文</a>";
+                } else if (id == "82") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=83\">English</a>版本";
+                } else if (id == "87") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "Also <a href=\"/?id=88\">available in 正體中文</a>";
+                } else if (id == "88") {
+                    document.getElementById("transl").style.cssText = String();
+                    document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=87\">English</a>版本";
+                };
             });
         </script>
 
@@ -231,6 +355,8 @@
         </div>
         <div class="line"></div>
         <div class="line-space"></div>
+
+        <div id="transl" style="display: none"></div>
 
         <div class="bordered-box" style="width: fit-content; margin-top: 3.5vh; margin-left: auto; margin-right: auto;">
             <div class="bordered-box-inner1">
