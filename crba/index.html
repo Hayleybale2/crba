@@ -30,11 +30,99 @@
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             };
 
+            function random_id() {
+                var id = String(randint(0, 186));
+
+                if (id == "184") {
+                    return random_id();
+                } else if (id == "138") {
+                    return random_id();
+                } else if (id == "139") {
+                    return random_id();
+                } else if (id == "134") {
+                    return random_id();
+                } else if (id == "30") {
+                    return random_id();
+                } else if (id == "31") {
+                    return random_id();
+                } else if (id == "32") {
+                    return random_id();
+                } else if (id == "33") {
+                    return random_id();
+                }
+
+                /* AcademyLIVE English */
+                else if (id == "118") {
+                    return random_id();
+                } else if (id == "103") {
+                    return random_id();
+                } else if (id == "105") {
+                    return random_id();
+                } else if (id == "159") {
+                    return random_id();
+                } else if (id == "113") {
+                    return random_id();
+                } else if (id == "75") {
+                    return random_id();
+                } else if (id == "77") {
+                    return random_id();
+                } else if (id == "79") {
+                    return random_id();
+                } else if (id == "96") {
+                    return random_id();
+                } else if (id == "99") {
+                    return random_id();
+                } else if (id == "101") {
+                    return random_id();
+                } else if (id == "114") {
+                    return random_id();
+                } else if (id == "109") {
+                    return random_id();
+                } else if (id == "119") {
+                    return random_id();
+                }
+
+                /* AcademyLIVE Chinese */
+                else if (id == "117") {
+                    return random_id();
+                } else if (id == "104") {
+                    return random_id();
+                } else if (id == "106") {
+                    return random_id();
+                } else if (id == "158") {
+                    return random_id();
+                } else if (id == "112") {
+                    return random_id();
+                } else if (id == "74") {
+                    return random_id();
+                } else if (id == "76") {
+                    return random_id();
+                } else if (id == "78") {
+                    return random_id();
+                } else if (id == "98") {
+                    return random_id();
+                } else if (id == "100") {
+                    return random_id();
+                } else if (id == "102") {
+                    return random_id();
+                } else if (id == "115") {
+                    return random_id();
+                } else if (id == "110") {
+                    return random_id();
+                } else if (id == "120") {
+                    return random_id();
+                }
+                
+                else {
+                    return id
+                };
+            };
+
             window.addEventListener("load", function () {
                 var id = new URLSearchParams(window.location.search).get("id") || "0";
 
                 document.getElementById("image").src = "https://github.com/Hayleybale2/crba/releases/download/main/" + id + ".png";
-                document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + randint(0, 186);
+                document.getElementById("next").href = window.location.href.split("?")[0] + "?id=" + random_id();
 
                 if (id == "12") {
                     document.getElementById("transl").style.cssText = String();
