@@ -112,7 +112,14 @@
                 } else if (id == "120") {
                     return random_id();
                 }
-                
+
+                /* S & F comic */
+                else if (Number(id) >= 56 && Number(id) <= 62) {
+                    return random_id();
+                } else if (Number(id) >= 63 && Number(id) <= 69) {
+                    return random_id();
+                }
+
                 else {
                     return id
                 };
