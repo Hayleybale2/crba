@@ -157,6 +157,18 @@
                     document.getElementById("transl").style.cssText = String();
                     document.getElementById("transl").innerHTML = "亦提供<a href=\"/?id=87\">English</a>版本";
                 };
+
+                if (id == "103") {
+                    document.getElementById("next").innerHTML = "random";
+                    document.getElementById("next2").style.cssText = String();
+
+                    document.getElementById("next2").href = "/?id=104";
+                } else if (id == "103") {
+                    document.getElementById("next").innerHTML = "random";
+                    document.getElementById("prev").style.cssText = String();
+
+                    document.getElementById("prev").href = "/?id=103";
+                };
             });
         </script>
 
@@ -321,6 +333,34 @@
                 text-align: center;
             }
 
+            #prev {
+                display: inline-block;
+                background-color: #F8E6FC;
+                border: 1px #DB63B7 solid;
+                margin-left: 50%;
+                padding-left: 2.25vh;
+                padding-right: 2.25vh;
+                color: #F4B3E5;
+                font-family: Snell Roundhand, cursive;
+                font-size: max(1.35vw, 1.75vh);
+                transform: translateX(-200%);
+                text-align: center;
+            }
+
+            #next2 {
+                display: inline-block;
+                background-color: #F8E6FC;
+                border: 1px #DB63B7 solid;
+                margin-left: 50%;
+                padding-left: 2.25vh;
+                padding-right: 2.25vh;
+                color: #F4B3E5;
+                font-family: Snell Roundhand, cursive;
+                font-size: max(1.35vw, 1.75vh);
+                transform: translateX(150%);
+                text-align: center;
+            }
+
             #author {
                 position: absolute;
                 display: block;
@@ -374,7 +414,9 @@
             </div>
         </div>
 
+        <a id="prev" style="display: none">prev</a>
         <a id="next">next</a>
+        <a id="next2" style="display: none">next</a>
 
         <div id="author">By <a href="https://www.pixiv.net/users/43874146">AVCHonline</a></div>
     </body>
